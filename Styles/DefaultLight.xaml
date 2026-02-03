@@ -1,0 +1,93 @@
+﻿<!--  ModernControls Default Light Theme  -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Background  -->
+
+
+    <SolidColorBrush x:Key="BackgroundDark"
+                     Color="#FFC3CCCE" />
+
+    <SolidColorBrush x:Key="BackgroundLight"
+                     Color="#FFD7DCE2" />
+
+    <SolidColorBrush x:Key="BackgroundMain"
+                     Color="#F5F5F5" />
+
+    <!--  Foreground  -->
+   
+    
+    <SolidColorBrush x:Key="TextNormal" 
+                     Color="#33353c" />
+   
+   
+
+    <!--Background-->
+    
+
+    <!--Border-->
+    <SolidColorBrush x:Key="BorderDark"
+                     Color="#FF666B77" />
+    <SolidColorBrush x:Key="BorderLight"
+                     Color="#FF7E8794" />
+    <!--Disable-->
+    <SolidColorBrush x:Key="DisableDark"
+                     Color="#FF737D86" />
+    <SolidColorBrush x:Key="DisableLight"
+                     Color="#FF8D99A7" />
+
+    <SolidColorBrush x:Key="TitleWinBackground"
+                     Color="#FF537FAB" />
+    <SolidColorBrush x:Key="TitleWinText"
+                     Color="#FF31F773" />
+
+
+    <SolidColorBrush x:Key="BlueLight"
+                     Color="#FF428FCC" />
+    <SolidColorBrush x:Key="BlueDefault"
+                     Color="#FF468FEA" />
+    <SolidColorBrush x:Key="BlueDark"
+                     Color="#0152c6" />
+
+    <SolidColorBrush x:Key="CyalDark"
+                     Color="#FF175C6D" />
+
+
+
+    <!--  Status  -->
+    <SolidColorBrush x:Key="success"
+                     Color="#18CB56" />
+    <SolidColorBrush x:Key="warning"
+                     Color="#CE941B" />
+    <SolidColorBrush x:Key="danger"
+                     Color="#CB2D2B" />
+
+   
+
+
+    <SolidColorBrush x:Key="TextCad"
+                     Color="#FF013C0A" />
+
+    <SolidColorBrush x:Key="TextActive"
+                     Color="#FF15161B" />
+
+    <SolidColorBrush x:Key="TextBoxBackgroundSelect"
+                     Color="#FF166FEF" />
+    <SolidColorBrush x:Key="TextBoxTextSelect"
+                     Color="#FFECEFF1" />
+
+
+   
+
+    
+
+    <SolidColorBrush x:Key="BackGroundOrange"
+                     Color="#FFF1A547" />
+    <SolidColorBrush x:Key="BackGroundPupple"
+                     Color="#FFBD8AC5" />
+    <SolidColorBrush x:Key="OrangeBrush"
+                     Color="Orange" />
+
+
+
+</ResourceDictionary>

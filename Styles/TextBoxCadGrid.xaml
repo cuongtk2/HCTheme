@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="CadGridTextBox"
+           TargetType="{x:Type TextBox}">
+
+        <Setter Property="OverridesDefaultStyle"
+                Value="True" />
+        <Setter Property="SnapsToDevicePixels"
+                Value="True" />
+        <Setter Property="SpellCheck.IsEnabled"
+                Value="False" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource TextActive}" />
+        <Setter Property="BorderBrush"
+                Value="{DynamicResource BorderLight}" />
+        <Setter Property="CaretBrush"
+                Value="{DynamicResource TextActive}" />
+
+        <Setter Property="VerticalContentAlignment"
+                Value="Bottom" />
+        <Setter Property="FontFamily"
+                Value="{DynamicResource MSFont}" />
+        <Setter Property="FontSize"
+                Value="{DynamicResource FontSize13}" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate  TargetType="TextBox">
+
+
+                    <Grid>
+                        <Border x:Name="border"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Background="Transparent" />
+
+                        <ScrollViewer x:Name="PART_ContentHost"
+                                      Background="Transparent"
+                                      Margin="2" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+
+                    </Grid>
+
+
+
+
+
+                    <ControlTemplate.Triggers>
+                        
+                        <Trigger Property="IsFocused"
+                                 Value="True">
+
+                            <Setter TargetName="border" Property="Background"
+                                    Value="{DynamicResource TextBoxBackgroundSelect}" />                            
+                            <Setter Property="Foreground"
+                                    Value="{DynamicResource TextBoxTextSelect}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+                            <Setter TargetName="PART_ContentHost"
+                                    Property="Foreground"
+                                    Value="{DynamicResource DisableLight}" />
+                        </Trigger>
+
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+
+
+    </Style>
+
+</ResourceDictionary>

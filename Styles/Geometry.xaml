@@ -1,0 +1,68 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    
+    <Geometry x:Key="DownArrow">M 0,0 L 3.5,4 L 7,0 Z</Geometry>
+    <Geometry x:Key="UpArrow">M 0,4 L 3.5,0 L 7,4 Z</Geometry>
+    <Geometry x:Key="RightArrow">M 0,0 L 4,3.5 L 0,7 Z</Geometry>
+    <Geometry x:Key="PickerGeom">M 8.0,2.0 L10.0,0.0 L11.5,1.5 L13.0,0.0 L14.5,1.5 L13.0,3.0 L14.5,4.5 L12.5,6.5 L11.5,5.5 L3.5,13.0 
+        L2.5,13.0 L1.0,14.5 L0.0,13.5 L1.5,12.0 L1.5,11.0 L9.0,3.0 Z</Geometry>
+
+    <Geometry x:Key="PickArrow">M 0.0,0.0 L 3.0,15.0 L 6.5,11.5 L 11.5,16.5 L 16.5,11.5 L 11.5,6.5 L 15.0,3.0 L 0.0,0.0 Z</Geometry>
+
+    <Geometry x:Key="ThinLeftRigthArrow">M 0,4 L 18,4 M 3,2 L 0,4 L 3,6 Z M 15,2 L 18,4 L 15,6 Z</Geometry>
+    <Geometry x:Key="ThinRigthArrow">M 0,4 L 16,4 M 13,2 L 16,4 L 13,6 Z</Geometry>
+    <Geometry x:Key="ThinLeftArrow">M 0,4 L 16,4 M 3,2 L 0,4 L 3,6 Z</Geometry>
+
+    <!-- MeasureIconGeometry -->
+    <GeometryGroup x:Key="MeasureIconGeometry">
+        <!-- Thêm một Path hình vuông -->
+        <RectangleGeometry Rect="0,5,30,10" />
+        <LineGeometry StartPoint="3,5"
+                      EndPoint="3,8" />
+        <LineGeometry StartPoint="6,5"
+                      EndPoint="6,8" />
+        <LineGeometry StartPoint="9,5"
+                      EndPoint="9,8" />
+        <LineGeometry StartPoint="12,5"
+                      EndPoint="12,10" />
+        <LineGeometry StartPoint="15,5"
+                      EndPoint="15,8" />
+        <LineGeometry StartPoint="18,5"
+                      EndPoint="18,8" />
+        <LineGeometry StartPoint="21,5"
+                      EndPoint="21,8" />
+        <LineGeometry StartPoint="24,5"
+                      EndPoint="24,10" />
+        <LineGeometry StartPoint="27,5"
+                      EndPoint="27,8" />
+        <PathGeometry Figures="M 2,0 L 0,1 2,2 Z" />
+        <PathGeometry Figures="M 28,0 L 30,1 28,2 Z" />
+        <LineGeometry StartPoint="0,1"
+                      EndPoint="30,1" />
+
+
+
+    </GeometryGroup>
+
+    <ControlTemplate x:Key="ContentSelectionButton">
+        <Grid>
+
+            <Rectangle Width="18"
+                       Height="18"
+                       Stroke="{DynamicResource OrangeBrush}"
+                       StrokeDashArray="2,1" />
+            <Path Data="{DynamicResource PickArrow}"
+                  Margin="12,6,-5,-3"
+                  Stroke="{DynamicResource TextNormal}">
+                <Path.RenderTransform>
+                    <ScaleTransform ScaleX="0.7"
+                                    ScaleY="0.7" />
+                </Path.RenderTransform>
+            </Path>
+        </Grid>
+    </ControlTemplate>
+
+
+
+</ResourceDictionary>

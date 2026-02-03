@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="CharSettingsGear">⚙</sys:String>
+    <sys:String x:Key="CharStraightRuler">📏</sys:String>
+    <sys:String x:Key="CharTriangularRuler">📐</sys:String>
+    <sys:String x:Key="CharPencil">✏️</sys:String>
+    <sys:String x:Key="CharPencil1">✎</sys:String>
+    <sys:String x:Key="CharFileFolder">🗂</sys:String>
+    <sys:String x:Key="CharHammerandWrench">🛠</sys:String>
+    <sys:String x:Key="CharUndefine">֍</sys:String>
+    <sys:String x:Key="CharLeftRight">↔</sys:String>
+    <sys:String x:Key="CharCircleWhite">○</sys:String>
+    <sys:String x:Key="CharBlackSquare">■</sys:String>
+    <sys:String x:Key="CharIdenticalTo">≡</sys:String>
+
+    <BitmapImage x:Key="IconMesure"  UriSource="pack://application:,,,/HCTheme;component/Icons/measurement-48.png" />
+
+</ResourceDictionary>

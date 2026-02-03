@@ -1,0 +1,76 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        
+        <ResourceDictionary Source="DefaultDark.xaml" />
+        
+        <ResourceDictionary Source="Fonts.xaml" />
+        <ResourceDictionary Source="CharSymbol.xaml" />
+        <ResourceDictionary Source="Geometry.xaml" />
+
+
+        <ResourceDictionary Source="Button.xaml" />
+        <ResourceDictionary Source="ButtonAccept.xaml" />
+        <ResourceDictionary Source="ButtonDrop.xaml" />
+        <ResourceDictionary Source="ButtonSymbol.xaml" />
+
+        <ResourceDictionary Source="CheckBox.xaml" />
+        <ResourceDictionary Source="CheckBoxGrid.xaml" />
+
+        <ResourceDictionary Source="ComboBox.xaml" />
+
+        
+
+        <ResourceDictionary Source="Expander.xaml" />
+        
+        <ResourceDictionary Source="Geometry.xaml" />
+
+        <ResourceDictionary Source="GroupBox.xaml" />
+        <ResourceDictionary Source="GroupBoxBorder.xaml" />
+        <ResourceDictionary Source="GroupBoxCad.xaml" />
+        <ResourceDictionary Source="GroupBoxCad1.xaml" />
+
+        <ResourceDictionary Source="HcTextBoxHint.xaml" />
+        <ResourceDictionary Source="HcTextBoxHeader.xaml" />
+        <ResourceDictionary Source="HcSwitch.xaml" />
+        <ResourceDictionary Source="HcWindow.xaml" />
+
+        <ResourceDictionary Source="Label.xaml" />
+
+        <ResourceDictionary Source="ListBox.xaml" />
+
+        <ResourceDictionary Source="ListView.xaml" />
+
+        <ResourceDictionary Source="Menu.xaml" />
+
+        <ResourceDictionary Source="ProgressBar.xaml" />
+
+        <ResourceDictionary Source="RadioButton.xaml" />
+        <ResourceDictionary Source="RadioTogButton.xaml" />
+
+        <ResourceDictionary Source="Scrollbar.xaml" />
+       
+        <ResourceDictionary Source="StatusBar.xaml" />
+
+
+        <ResourceDictionary Source="TableControl.xaml" />
+
+        <ResourceDictionary Source="TextBox.xaml" />
+        <ResourceDictionary Source="TextBoxCad.xaml" />
+        <ResourceDictionary Source="TextBoxCadGrid.xaml" />
+        <ResourceDictionary Source="TextBoxLarger.xaml" />
+
+        <ResourceDictionary Source="ToggleEllip.xaml" />
+        <ResourceDictionary Source="ToolTip.xaml" />
+        
+        <ResourceDictionary Source="DataGrid.xaml" />
+        
+        
+
+
+
+
+
+
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

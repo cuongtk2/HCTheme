@@ -1,0 +1,103 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="EllipToggleButton"
+           TargetType="{x:Type ToggleButton}">
+        <Setter Property="OverridesDefaultStyle"
+                Value="True" />
+        <Setter Property="SnapsToDevicePixels"
+                Value="True" />
+        <Setter Property="Padding"
+                Value="5" />
+        <Setter Property="BorderBrush"
+                Value="{DynamicResource BorderDark}" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource TextBoxTextSelect}" />
+        <Setter Property="Background"
+                Value="{DynamicResource BorderDark}" />
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="FontWeight"
+                Value="DemiBold" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <ControlTemplate  TargetType="{x:Type ToggleButton}">
+                    <Grid>
+                        <Grid>
+                            <Ellipse Width="24"
+                                     Height="24">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="1,1"
+                                                         StartPoint="0,0">
+                                        <GradientStop Color="#FF156A7B"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FF81CECE"
+                                                      Offset="1" />
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+
+                            </Ellipse>
+
+                            <Ellipse Width="20"
+                                     Height="20"
+                                     StrokeThickness="2">
+                                <Ellipse.Stroke>
+                                    <LinearGradientBrush EndPoint="0,0"
+                                                         StartPoint="1,1">
+                                        <GradientStop Color="#FF2799A7"
+                                                      Offset="0" />
+                                        <GradientStop Color="#FFA0DADA"
+                                                      Offset="1" />
+                                    </LinearGradientBrush>
+                                </Ellipse.Stroke>
+
+                            </Ellipse>
+                            <Path x:Name="LeftArrow"
+                                  Fill="{TemplateBinding Foreground}"
+                                  Data="M 10,6 16,12 10,18 Z" />
+                            <Path x:Name="RightArrow"
+                                  Fill="{TemplateBinding Foreground}"
+                                  Data="M 14,6 8,12 14,18 Z" />
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+                            <Setter Property="Foreground"
+                                    Value="{DynamicResource DisableLight }" />
+
+                        </Trigger>
+
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+                            <Setter TargetName="LeftArrow"
+                                    Property="Visibility"
+                                    Value="Collapsed" />
+                            <Setter TargetName="RightArrow"
+                                    Property="Visibility"
+                                    Value="Visible" />
+                        </Trigger>
+                        <Trigger Property="IsChecked"
+                                 Value="False">
+                            <Setter TargetName="LeftArrow"
+                                    Property="Visibility"
+                                    Value="Visible" />
+                            <Setter TargetName="RightArrow"
+                                    Property="Visibility"
+                                    Value="Collapsed" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+
+    </Style>
+</ResourceDictionary>
