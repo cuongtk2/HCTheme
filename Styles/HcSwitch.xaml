@@ -6,13 +6,8 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="DefaultDark.xaml" />
 
-    </ResourceDictionary.MergedDictionaries>
-
-   
-
-
+    </ResourceDictionary.MergedDictionaries>  
     <Style TargetType="{x:Type hc:HcSwitch}" >
-
 
         <Setter Property="OverridesDefaultStyle" Value="True"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -26,7 +21,6 @@
                 Value="{DynamicResource MSFont}" />
         <Setter Property="FontSize"
                 Value="{DynamicResource FontSize12}" />
-
 
         <Setter Property="Template">
             <Setter.Value>
@@ -92,9 +86,7 @@
                             <Setter TargetName="PART_Toggle"
                                     Property="Background"
                                     Value="{DynamicResource DisableLight}" />
-
-                        </Trigger>
-                       
+                        </Trigger>                       
 
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="PART_Toggle" Property="HorizontalAlignment" Value="Left" />
@@ -104,7 +96,6 @@
                                     Value="{DynamicResource BlueDefault}" />
                             <Setter TargetName="onText" Property="Visibility" Value="Visible"/>
                             <Setter TargetName="offText" Property="Visibility" Value="Hidden"/>
-
                            
                         </Trigger>
                     </ControlTemplate.Triggers>
